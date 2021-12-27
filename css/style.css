@@ -7,9 +7,9 @@
 
 .container {
   background-color: #c5e4e7;
-  max-height: 100vh;
   font-family: "Space Mono", monospace;
   padding-top: 50px;
+  min-height: 100vh;
 }
 
 .logo {
@@ -41,6 +41,7 @@ h2 {
   padding: 0 20px;
   width: 100%;
   text-align: right;
+  border-radius: 5px;
 }
 
 .number-input:focus {
@@ -122,6 +123,10 @@ h2 {
   background-color: #fff;
 }
 
+#people.active {
+  border: 1px solid #e17457;
+}
+
 .calculator__display {
   background-color: #00474b;
   border-radius: 15px;
@@ -179,5 +184,96 @@ h2 {
 
 .gray {
   color: #547878;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-bottom: 50px;
+  }
+  .calculator {
+    max-width: 70%;
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .calculator {
+    max-width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 28px 42px;
+  }
+  .calculator__inputs {
+    -ms-flex-preferred-size: 46%;
+        flex-basis: 46%;
+  }
+  .calculator__display {
+    -ms-flex-preferred-size: 46%;
+        flex-basis: 46%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #bill {
+    margin-bottom: 1rem;
+  }
+  #people {
+    margin-bottom: 0;
+  }
+  .btn {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .logo {
+    margin-bottom: 87px;
+  }
+  .calculator {
+    width: 63.5%;
+    height: 481px;
+  }
+  .calculator__inputs {
+    -ms-flex-preferred-size: 41.2%;
+        flex-basis: 41.2%;
+  }
+  .calculator__display {
+    -ms-flex-preferred-size: 44.9%;
+        flex-basis: 44.9%;
+    padding: 40px;
+  }
+  .calculator__amount-display {
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: -1px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

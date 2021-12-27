@@ -4,9 +4,9 @@
 
 .container {
   background-color: $clr-bodyBackground;
-  max-height: 100vh;
   font-family: $font-Main;
   padding-top: 50px;
+  min-height: 100vh;
 }
 .logo {
   display: block;
@@ -34,6 +34,7 @@ h2 {
   padding: 0 20px;
   width: 100%;
   text-align: right;
+  border-radius: 5px;
   &:focus {
     outline: 1px solid $clr-activeGreen;
   }
@@ -97,6 +98,9 @@ h2 {
   display: block;
   background-color: $clr-white;
 }
+#people.active {
+  border: 1px solid $clr-error;
+}
 .calculator__display {
   background-color: $clr-darkGreen;
   border-radius: 15px;
@@ -142,4 +146,69 @@ h2 {
 
 .gray {
   color: $clr-offGray;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-bottom: 50px;
+  }
+  .calculator {
+    max-width: 70%;
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .calculator {
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 42px;
+  }
+  .calculator__inputs {
+    flex-basis: 46%;
+  }
+  .calculator__display {
+    flex-basis: 46%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  #bill {
+    margin-bottom: 1rem;
+  }
+  #people {
+    margin-bottom: 0;
+  }
+  .btn {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 1440px) {
+  .logo {
+    margin-bottom: 87px;
+  }
+  .calculator {
+    width: 63.5%;
+    height: 481px;
+  }
+  .calculator__inputs {
+    flex-basis: 41.2%;
+  }
+  .calculator__display {
+    flex-basis: 44.9%;
+    padding: 40px;
+  }
+  .calculator__amount-display {
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: -1px;
+  }
 }

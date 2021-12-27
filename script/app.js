@@ -42,6 +42,7 @@ elNumberOfPeople.addEventListener('change', ()=>{
     numberOfPeople = elNumberOfPeople.value;
     if(numberOfPeople == 0){
         elAlert.classList.add('active');
+        elNumberOfPeople.classList.add('active')
         return;
     }else{
         elAlert.classList.remove('active')
@@ -49,7 +50,7 @@ elNumberOfPeople.addEventListener('change', ()=>{
     
     let totalTip =  (billValue * tipValue) / numberOfPeople;
     
-    elTipPerPerson.textContent = `$${totalTip}`;
+    elTipPerPerson.textContent = `$${totalTip.toFixed(2)}`;
     elTotalPerPerson.textContent = "$" + (billValue + (totalTip * numberOfPeople)).toFixed(2) / numberOfPeople;
 })
 function clearDisplay(){
