@@ -50,7 +50,7 @@ elNumberOfPeople.addEventListener('change', ()=>{
     let totalTip =  (billValue * tipValue) / numberOfPeople;
     
     elTipPerPerson.textContent = `$${totalTip}`;
-    elTotalPerPerson.textContent = "$" + (billValue + (totalTip * numberOfPeople)) / numberOfPeople;
+    elTotalPerPerson.textContent = "$" + (billValue + (totalTip * numberOfPeople)).toFixed(2) / numberOfPeople;
 })
 function clearDisplay(){
     elTipPerPerson.textContent = "$0";
