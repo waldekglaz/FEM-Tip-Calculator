@@ -108,7 +108,7 @@ h2 {
           justify-content: space-between;
 }
 
-.calculator__tip-amount-display {
+.calculator__amount-display {
   font-size: 32px;
   line-height: 47px;
   text-align: right;
@@ -134,6 +134,10 @@ h2 {
   border: none;
   height: 48px;
   text-transform: uppercase;
+}
+
+.active {
+  background-color: #26c2ae;
 }
 
 .gray {
