@@ -23,29 +23,36 @@
       <div class="calculator__inputs">
         <div class="calculator_bill">
           <h2>Bill</h2>
-          <input class="number-input" type="number" name="bill" id="bill" placeholder="$">
+          <div class="input-wrapper">
+            <img src="images/icon-dollar.svg" alt="" class="input__img">
+            <input class="number-input" type="number" name="bill" id="bill">
+          </div>
+
+
         </div>
         <div class="calculator__tip">
           <h2>Select Tip %</h2>
-          <button type="button" class="tip">5%</button>
-          <button type="button" class="tip">10%</button>
-          <button type="button" class="tip">15%</button>
-          <button type="button" class="tip">25%</button>
-          <button type="button" class="tip">50%</button>
-          <input class="custom-tip" type="number" name="custom-tip" id="" placeholder="Custom">
+          <div class="calculator__tip-buttons"><button type="button" class="tip">5%</button>
+            <button type="button" class="tip">10%</button>
+            <button type="button" class="tip">15%</button>
+            <button type="button" class="tip">25%</button>
+            <button type="button" class="tip">50%</button>
+            <input class="custom-tip" type="number" name="custom-tip" id="" placeholder="Custom"></div>
+
         </div>
         <div class="calculator__number-of-people">
           <h2>Number of People</h2>
-          <input class="number-input" type="number" name="people" id="">
+          <div class="input-wrapper"><img src="images/icon-person.svg" alt="" class="input__img">
+            <input class="number-input" type="number" name="people" id=""></div>
         </div>
       </div>
       <div class="calculator__display">
         <div class="calculator__tip-amount">
-          <h2>Tip Amount<br>/ person</h2>
+          <h2>Tip Amount<br><span class="gray">/ person</span></h2>
           <div class="calculator__tip-amount-display">$4.27</div>
         </div>
         <div class="calculator__total-per-person">
-          <h2>Total<br>/ person</h2>
+          <h2>Total<br><span class="gray">/ person</span></h2>
           <div class="calculator__tip-amount-display">$32.79</div>
         </div>
         <button class="btn" type="reset">Reset</button>

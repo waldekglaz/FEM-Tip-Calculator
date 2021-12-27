@@ -40,6 +40,30 @@ h2 {
   border: none;
   padding: 0 20px;
   width: 100%;
+  text-align: right;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input__img {
+  position: absolute;
+  display: block;
+  left: 20px;
+  top: 9px;
+}
+
+.calculator__tip-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .tip {
@@ -92,6 +116,11 @@ h2 {
   letter-spacing: -0.666667px;
   color: #26c2ae;
   font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.calculator__total-per-person {
+  margin-bottom: 2rem;
 }
 
 .btn {
@@ -106,5 +135,9 @@ h2 {
   border: none;
   height: 48px;
   text-transform: uppercase;
+}
+
+.gray {
+  color: #547878;
 }
 /*# sourceMappingURL=style.css.map */
