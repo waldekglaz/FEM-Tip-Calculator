@@ -9,20 +9,22 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <main class="container">
-    <h1 class="title">spli<br>tter</h1>
+    <img src="images/logo.svg" alt="" class="logo">
 
     <form action="" class="calculator">
       <div class="calculator__inputs">
         <div class="calculator_bill">
           <h2>Bill</h2>
-          <label for="bill">bill</label>
-          <input type="number" name="bill" id="bill" placeholder="$">
+          <input class="number-input" type="number" name="bill" id="bill" placeholder="$">
         </div>
-        .
         <div class="calculator__tip">
           <h2>Select Tip %</h2>
           <button type="button" class="tip">5%</button>
@@ -33,8 +35,8 @@
           <input class="custom-tip" type="number" name="custom-tip" id="" placeholder="Custom">
         </div>
         <div class="calculator__number-of-people">
-          <label for="people">Number of People</label>
-          <input type="number" name="people" id="">
+          <h2>Number of People</h2>
+          <input class="number-input" type="number" name="people" id="">
         </div>
       </div>
       <div class="calculator__display">
@@ -42,21 +44,14 @@
           <h2>Tip Amount<br>/ person</h2>
           <div class="calculator__tip-amount-display">$4.27</div>
         </div>
-        <div class="calculator__totap-per-person">
+        <div class="calculator__total-per-person">
           <h2>Total<br>/ person</h2>
-          <div class="calculator__tip-amount-display">32.79</div>
+          <div class="calculator__tip-amount-display">$32.79</div>
         </div>
-        <button type="reset">Reset</button>
+        <button class="btn" type="reset">Reset</button>
       </div>
     </form>
   </main>
-
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 
 </html>
