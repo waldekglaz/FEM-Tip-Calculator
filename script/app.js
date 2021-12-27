@@ -13,12 +13,17 @@ let tipValue = 0;
 
 elBill.addEventListener('change', ()=>{
         billValue = parseFloat(elBill.value);
-    return billValue;
+        return billValue;
     
 })
-
+function removeActive(){
+    tipButtons.forEach(btn=>{
+        btn.classList.remove('active')
+    })
+}
 tipButtons.forEach(btn=>{
     btn.addEventListener('click', (e)=>{
+        removeActive();
         e.target.classList.add('active');
         let tipAsString = (e.target.textContent).toString();
         tipValue = parseFloat(tipAsString) / 100;
@@ -50,4 +55,5 @@ function clearDisplay(){
         btn.classList.remove('active')
     })
 }
+
 elButton.addEventListener('click', clearDisplay);
