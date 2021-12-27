@@ -31,6 +31,7 @@ tipButtons.forEach(btn=>{
     })
 })
 elCustomTip.addEventListener('change',(e)=>{
+        removeActive();
         tipValue = parseFloat(e.target.value) / 100;
         return tipValue;
 })
