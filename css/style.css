@@ -81,6 +81,11 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.tip.active {
+  background-color: #26c2ae;
+  color: #00474b;
+}
+
 .custom-tip {
   width: 146px;
   height: 48px;
@@ -90,6 +95,11 @@ h2 {
   text-align: center;
   border: none;
   font-size: 24px;
+  border-radius: 5px;
+}
+
+.custom-tip.active {
+  outline: 1px solid #26c2ae;
 }
 
 .calculator__number-of-people {
@@ -158,10 +168,13 @@ h2 {
   border: none;
   height: 48px;
   text-transform: uppercase;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+  cursor: pointer;
 }
 
-.active {
-  background-color: #26c2ae;
+.btn:hover {
+  background-color: #9fe8df;
 }
 
 .gray {

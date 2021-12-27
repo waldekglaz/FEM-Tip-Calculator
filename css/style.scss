@@ -63,6 +63,10 @@ h2 {
   font-size: 24px;
   margin-bottom: 1rem;
 }
+.tip.active {
+  background-color: $clr-activeGreen;
+  color: $clr-darkGreen;
+}
 .custom-tip {
   width: 146px;
   height: 48px;
@@ -72,6 +76,10 @@ h2 {
   text-align: center;
   border: none;
   font-size: 24px;
+  border-radius: 5px;
+}
+.custom-tip.active {
+  outline: 1px solid $clr-activeGreen;
 }
 .calculator__number-of-people {
   position: relative;
@@ -125,10 +133,13 @@ h2 {
   border: none;
   height: 48px;
   text-transform: uppercase;
+  transition: ease-in 0.3s;
+  cursor: pointer;
+  &:hover {
+    background-color: $clr-btnActive;
+  }
 }
-.active {
-  background-color: $clr-activeGreen;
-}
+
 .gray {
   color: $clr-offGray;
 }
