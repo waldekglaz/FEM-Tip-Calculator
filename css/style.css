@@ -43,6 +43,10 @@ h2 {
   text-align: right;
 }
 
+.number-input:focus {
+  outline: 1px solid #26c2ae;
+}
+
 .input-wrapper {
   position: relative;
 }
@@ -86,6 +90,26 @@ h2 {
   text-align: center;
   border: none;
   font-size: 24px;
+}
+
+.calculator__number-of-people {
+  position: relative;
+}
+
+.alert {
+  color: #e17457;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+.alert.active {
+  display: block;
+  background-color: #fff;
 }
 
 .calculator__display {

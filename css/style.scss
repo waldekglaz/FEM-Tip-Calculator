@@ -34,6 +34,9 @@ h2 {
   padding: 0 20px;
   width: 100%;
   text-align: right;
+  &:focus {
+    outline: 1px solid $clr-activeGreen;
+  }
 }
 .input-wrapper {
   position: relative;
@@ -69,6 +72,22 @@ h2 {
   text-align: center;
   border: none;
   font-size: 24px;
+}
+.calculator__number-of-people {
+  position: relative;
+}
+.alert {
+  color: $clr-error;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  transition: ease-in-out 0.2s;
+}
+.alert.active {
+  display: block;
+  background-color: $clr-white;
 }
 .calculator__display {
   background-color: $clr-darkGreen;
