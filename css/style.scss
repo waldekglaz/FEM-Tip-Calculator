@@ -174,7 +174,8 @@ h2 {
     padding: 28px 42px;
   }
   .calculator__inputs {
-    flex-basis: 46%;
+    flex-basis: 52%;
+    margin-right: 48px;
   }
   .calculator__display {
     flex-basis: 46%;
@@ -188,6 +189,10 @@ h2 {
   #people {
     margin-bottom: 0;
   }
+  .tip,
+  .custom-tip {
+    width: 117px;
+  }
   .btn {
     margin-top: 50px;
   }
@@ -199,9 +204,11 @@ h2 {
   .calculator {
     width: 63.5%;
     height: 481px;
+    padding: 28px;
   }
   .calculator__inputs {
-    flex-basis: 41.2%;
+    flex-basis: 46.2%;
+    padding: 0;
   }
   .calculator__display {
     flex-basis: 44.9%;
